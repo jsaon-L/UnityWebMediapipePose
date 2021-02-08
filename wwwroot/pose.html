@@ -1,0 +1,64 @@
+<html lang="en">
+  <head>
+
+    <link type="text/css" rel="styleSheet"  href="./pose.css" />
+    
+
+
+
+  <script src="./package/camera_utils.js" crossorigin="anonymous"></script>
+  <script src="./package/control_utils.js" crossorigin="anonymous"></script>
+  <script src="./package/drawing_utils.js" crossorigin="anonymous"></script>
+  <script src="./package/pose.js" crossorigin="anonymous"></script>
+
+
+
+
+
+
+</head>
+
+<body translate="no">
+
+
+    <video class="input_video selfie" width="1280" height="720" src="./b.mp4"  autoplay></video>
+
+
+
+
+  
+<script id="rendered-js">
+
+
+
+const videoElement = document.getElementsByClassName('input_video')[0];
+console.log(videoElement);
+
+function onResults(results) {
+  console.log(results.poseLandmarks);
+
+}
+
+const pose = new Pose({ locateFile: file => {
+    return `https://cdn.jsdelivr.net/npm/@mediapipe/pose@0.1/${file}`;
+  } });
+
+pose.onResults(onResults);
+
+document.onkeydown=function(event){
+  
+  console.log("按下了按键 识别当前帧");
+  pose.send({ image: videoElement })
+
+
+}
+
+</script>
+
+  
+
+
+
+
+ 
+</body></html>
