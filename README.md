@@ -8,8 +8,8 @@ Mediapipe js文档 https://google.github.io/mediapipe/getting_started/javascript
 `wwwroot` 里面是一个完整可运行的打包例子
 
 # 思路
-.从PlaybackEngines/WebGLSupport/BuildTools/lib 里webcam 脚本可知道 unity webgl 播放视频就是使用一个<video></video>标签
-.而Mediapipe 的js版本也是把camera图像给到video显示并传给pose计算骨骼
+. 从PlaybackEngines/WebGLSupport/BuildTools/lib 里webcam 脚本可知道 unity webgl 播放视频就是使用一个<video></video>标签
+. 而Mediapipe 的js版本也是把camera图像给到video显示并传给pose计算骨骼
 所以可以使用unity 打开摄像头并显示图像 mediapipe只需要取得unity创建的video标签并计算返回数据就可
 
 我们把 mediapipe计算解析的代码写在 https://github.com/jsaon-L/UnityWebMediapipePose/blob/main/wwwroot/index.html 这里(这个index.html 是unity打包生成)
