@@ -15,6 +15,6 @@ Unity web jS与unity 通信文档
 按照文档 Unity和js通信需要编写 .jslib 插件脚本(不知道Unity能否直接调用index.html里的js函数),所以我们写一个函数作为中间函数
 
 
-Unity   js.jslib    HTML(pose脚本)
+`Unity`   `js.jslib`    `HTML(pose脚本)`
 
 大体流程为 `Unity`发送请求计算骨骼给-->`.jslib`-->`HTML(计算骨骼)`-->`Unity(将结果通知Unity)`
