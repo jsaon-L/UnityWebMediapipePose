@@ -24,3 +24,6 @@
 `Unity`   `js.jslib`    `HTML(pose脚本)`
 
 大体流程为 `Unity`发送请求计算骨骼给-->`.jslib`-->`HTML(计算骨骼)`-->`Unity(将结果通知Unity)`
+
+# 大佬的UnityMediapipe项目
+- https://github.com/homuler/MediaPipeUnityPlugin
