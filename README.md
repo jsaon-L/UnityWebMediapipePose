@@ -1,10 +1,13 @@
 # UnityWebMediapipePose
 将 Mediapipe Pose识别与Unity WebGL接入
+理论上可以很轻松接入所有 Mediapipe js支持的功能
 
 # 说明
-Unity web jS与unity 通信文档
+Unity web jS与unity 通信文档https://docs.unity3d.com/Manual/webgl-interactingwithbrowserscripting.html
+Mediapipe js文档 https://google.github.io/mediapipe/getting_started/javascript
+`wwwroot` 里面是一个完整可运行的打包例子
 
-思路
+# 思路
 从PlaybackEngines/WebGLSupport/BuildTools/lib 里webcam 脚本可知道 unity webgl 播放视频就是使用一个<video></video>标签
 而Mediapipe 的js版本也是把camera图像给到video显示并传给pose计算骨骼
 所以可以使用unity 打开摄像头并显示图像 mediapipe只需要取得unity创建的video标签并计算返回数据就可
