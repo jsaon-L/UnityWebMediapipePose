@@ -4,7 +4,7 @@
 
 # 说明
 - Unity web jS与unity 通信文档https://docs.unity3d.com/Manual/webgl-interactingwithbrowserscripting.html
-- Mediapipe js文档 https://google.github.io/mediapipe/getting_started/javascript
+- Mediapipe js文档https://google.github.io/mediapipe/getting_started/javascript
 - `wwwroot` 里面是一个完整可运行的打包例子
 - Demo里需要按下键盘 A才能启动姿势识别
 
